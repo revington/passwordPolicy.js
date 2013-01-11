@@ -1,5 +1,5 @@
 {
-    "name": "passwordPolicy.js",
+    "name": "password-policy.js",
     "version": "0.0.0",
     "description": "A multi-policy password validation tool for node.js and the browser",
     "main": "index.js",
