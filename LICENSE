@@ -1,16 +1,3 @@
-passwordPolicy.js
-=================
-
-A multi-policy password validation tool for node.js and the browser
-
-code coverage
-=============
-
-	$npm run-script coverage
-In order to run the code coverage tool you need (node.js) https://github.com/visionmedia/node-jscoverage installed on your computer
-
-LICENSE 
-=======
 (The MIT License)
 
 Copyright (c) 2012 Pedro Narciso García Revington<p.revington@gmail.com>
