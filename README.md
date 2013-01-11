@@ -3,6 +3,12 @@ passwordPolicy.js
 
 A multi-policy password validation tool for node.js and the browser
 
+Install
+=======
+For node.js use npm `$ npm install password-policy.js`
+For the browser download [lib/passwordPolicy.js](https://raw.github.com/revington/passwordPolicy.js/master/lib/passwordPolicy.js)
+
+
 code coverage
 =============
 
