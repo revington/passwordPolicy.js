@@ -7,7 +7,7 @@ code coverage
 =============
 
 	$npm run-script coverage
-In order to run the code coverage tool you need (node.js) https://github.com/visionmedia/node-jscoverage installed on your computer
+In order to run the code coverage tool you need https://github.com/visionmedia/node-jscoverage installed on your computer
 
 LICENSE 
 =======
