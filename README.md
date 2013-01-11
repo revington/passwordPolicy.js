@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/revington/passwordPolicy.js.png)](http://travis-ci.org/revington/passwordPolicy.js)
 passwordPolicy.js
 =================
 
