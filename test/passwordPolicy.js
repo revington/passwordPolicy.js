@@ -15,4 +15,17 @@ describe('passwordPolicy.js', function () {
         assert(!report[0].isValid);
         assert(!report[0].isValid);
     });
+    describe('context augmentation', function () {
+        it('should be able to augmentate context using middleware', function () {
+            var t = new pa(),
+                middleware = function (ctx, next) {
+                    ctx.augmented = 1;
+                    next();
+                };
+            t.policy('some', middleware, function (ctx) {
+                assert(ctx.augmented);
+            });
+            t.test();
+        });
+    });
 });
