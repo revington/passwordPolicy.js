@@ -13,19 +13,24 @@ describe('passwordPolicy.js', function () {
         report = t.test('qwerty');
         assert.equal(report.length, 2);
         assert(!report[0].isValid);
-        assert(!report[0].isValid);
+        assert(!report[1].isValid);
     });
     describe('context augmentation', function () {
         it('should be able to augmentate context using middleware', function () {
             var t = new pa(),
-                middleware = function (ctx, next) {
-                    ctx.augmented = 1;
+                one = function (ctx, next) {
+                    ctx.one = 1;
                     next();
-                };
-            t.policy('some', middleware, function (ctx) {
-                assert(ctx.augmented);
-            });
-            t.test();
+                },
+                two = function (ctx, next) {
+                    ctx.two = 2;
+                    next();
+                },
+                report;
+            t.policy('some', one, two);
+            report = t.test('a');
+            assert.equal(report[0].one, 1);
+            assert.equal(report[0].two, 2);
         });
     });
 });
